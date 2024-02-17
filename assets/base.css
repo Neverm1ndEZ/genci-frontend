@@ -1,0 +1,99 @@
+/* Inspired by Vercel design */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply dark:bg-[#141414] dark:text-[#FFFFFF] bg-[#F0F7FF] text-[#8A8A8A];
+  }
+}
+
+.bg-color {
+  background: var(--background);
+}
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Inter', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+.MuiDateCalendar-root {
+  /* width: 305px !important;  */
+  height: 275px !important;
+  background: #131619 !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  color: white !important;
+  border-radius: 1.25rem;
+  font-family: 'Montserrat' !important;
+}
+
+.MuiButtonBase-root {
+  color: white !important;
+  font-family: 'Montserrat' !important;
+}
+
+.MuiPaper-root,
+.MuiPaper-elevation,
+.MuiPaper-rounded,
+.MuiPaper-elevation8,
+.MuiPickersPopper-paper {
+  background: #111827 !important;
+  font-family: 'Montserrat' !important;
+}
+
+.MuiPickersCalendarHeader-root,
+.MuiPickersCalendarHeader-root,
+.MuiPickersCalendarHeader-label,
+.MuiPickersCalendarHeader-label {
+  font-family: 'Montserrat' !important;
+}
+
+.MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background: linear-gradient(
+    243deg,
+    #d41275 -10.84%,
+    #2f0e80 113.11%
+  ) !important;
+}
+
+.MuiSvgIcon-fontSizeMedium {
+  color: gray;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup {
+  animation: fade-in 250ms ease-in-out;
+}
+
+.swiper img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#contactNumber {
+  background-color: transparent;
+  outline: none;
+}
+
+.react-activity-calendar {
+  max-width: none;
+}
+
+.bg-gradientPrimary{
+  background : linear-gradient(243deg, #D41275 -10.84%, #2F0E80 113.11%) !important;
+}
+
+ 
